@@ -179,3 +179,15 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Large source presentation (the PDF export in documents/ stays tracked)
+*.pptx
+
+# Office lock files
+~$*
+
+# Course-provided Techman library: not redistributed (kept locally, see README)
+tm_libraries/
+
+# Course-provided ZED example scripts: unused by the pipeline, not redistributed (kept locally)
+camera_libraries/

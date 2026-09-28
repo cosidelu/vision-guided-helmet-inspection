@@ -1,0 +1,12 @@
+# Third-party packages imported by the project modules, the notebooks and the
+# course-provided tm_libraries/ (not included in this repository, see README).
+# The notebooks were last run with Python 3.14; pymodbus >= 3.8.1 needs Python >= 3.9.
+numpy
+opencv-python
+matplotlib
+pymodbus>=3.8.1  # tm_libraries/techman.py uses convert_from_registers(..., word_order)
+rich
+
+# pyzed (ZED SDK Python API) is required by camera_scripts_v2.py but is not installable
+# from PyPI: install the Stereolabs ZED SDK, then run its get_python_api.py script.
+# Do not `pip install pyzed`, which is an unrelated package.
